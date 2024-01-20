@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .forms import ComputerForm
+from .models import Computer
 
 # Create your views here.
 def home(request):
@@ -25,3 +26,12 @@ def computer_entry(request):
         "form": form,
     }
     return render(request, "computer_entry.html", context)
+
+def computer_list(request):
+    title = 'List of all computers'
+    queryset = Computer.objects.all()
+    context = {
+    "title": title,
+    "queryset": queryset,
+    }
+    return render(request, "computer_list.html",context)
