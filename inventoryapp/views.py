@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import ComputerForm
 from .models import Computer
 
@@ -15,6 +15,7 @@ def computer_entry(request):
     form = ComputerForm(request.POST or None)
     if form.is_valid():
         form.save()
+        return redirect('/computer_list')
         context = {
             "title": title,
             "form": form,
