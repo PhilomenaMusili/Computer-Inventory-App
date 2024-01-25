@@ -1,4 +1,4 @@
-{% load static %} {% load crispy_forms_tags %}
+{% load static %} {% load django_bootstrap5 %}
 
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
@@ -246,7 +246,8 @@
       <div class="bg-body-tertiary p-5 rounded">
         <h1>{{ title }}</h1>
         <form method="post" action="">
-          {% csrf_token %} {{form|crispy}}
+          {% csrf_token %} {% for field in form %} {% bootstrap_field field %}
+          {% endfor %}
           <input type="submit" value="Save" />
         </form>
       </div>
