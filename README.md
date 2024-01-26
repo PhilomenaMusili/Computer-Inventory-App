@@ -16,18 +16,18 @@ User Authentication: Implement Django's built-in authentication system for secur
 
 3.Django 
 
-4. Bootsrap5
+4.Bootsrap5
 
 ## Installation Steps
-Clone the repository: git clone [repository_url].
+1.Clone the repository: git clone [repository_url]
 
-Install dependencies: pip install -r requirements.txt.
+2.Install dependencies: pip install -r requirements.txt
 
-Run migrations: python manage.py migrate.
+3.Run migrations: python manage.py migrate
 
-Create a superuser for admin access: python manage.py createsuperuser.
+4.Create a superuser for admin access: python manage.py createsuperuser
 
-Start the development server: python manage.py runserver.
+5.Start the development server: python manage.py runserver
 
 Visit http://localhost:8000/admin/ and log in with the superuser credentials to access the Django admin interface for CRUD operations.
 
