@@ -16,10 +16,15 @@ Django [version]
 [Other dependencies, if any]
 ## Installation Steps
 Clone the repository: git clone [repository_url]
+
 Install dependencies: pip install -r requirements.txt
+
 Run migrations: python manage.py migrate
+
 Create a superuser for admin access: python manage.py createsuperuser
+
 Start the development server: python manage.py runserver
+
 Visit http://localhost:8000/admin/ and log in with the superuser credentials to access the Django admin interface for CRUD operations.
 
 ## Usage
@@ -38,14 +43,14 @@ Deleting a Computer: Remove a computer from the inventory by utilizing the delet
 Viewing Computers: Browse through the list of computers to view their details.
 
 ## Contributing
-We welcome contributions from the community. If you find bugs, have feature requests, or would like to contribute code, please follow our Contribution Guidelines.
+If you find bugs, have feature requests, or would like to contribute code, you are welcome.
 
 ## License
 This project is licensed under the [License Name] - see the LICENSE.md file for details.
 
 ## Acknowledgments
 This project makes use of the Django framework.
-[List any other acknowledgments or credits]
+
 ## Contact
-For support, inquiries, or feedback, please contact [Your Email Address].
+For support, inquiries, or feedback, please contact [philomenamusili2@gmail.com].
 
