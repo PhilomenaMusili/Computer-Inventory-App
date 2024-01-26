@@ -10,20 +10,24 @@ Models and Views: Utilize Django models to represent computer data and views to 
 User Authentication: Implement Django's built-in authentication system for secure access to the CRUD functionalities.
 
 ## Installation
-Prerequisites
-Python 3.x
-Django [version]
-[Other dependencies, if any]
+1.Prerequisites
+
+2.Python 3.x
+
+3.Django 
+
+4. Bootsrap5
+
 ## Installation Steps
-Clone the repository: git clone [repository_url]
+Clone the repository: git clone [repository_url].
 
-Install dependencies: pip install -r requirements.txt
+Install dependencies: pip install -r requirements.txt.
 
-Run migrations: python manage.py migrate
+Run migrations: python manage.py migrate.
 
-Create a superuser for admin access: python manage.py createsuperuser
+Create a superuser for admin access: python manage.py createsuperuser.
 
-Start the development server: python manage.py runserver
+Start the development server: python manage.py runserver.
 
 Visit http://localhost:8000/admin/ and log in with the superuser credentials to access the Django admin interface for CRUD operations.
 
