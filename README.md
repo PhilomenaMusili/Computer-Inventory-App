@@ -22,7 +22,7 @@ Create a superuser for admin access: python manage.py createsuperuser
 Start the development server: python manage.py runserver
 Visit http://localhost:8000/admin/ and log in with the superuser credentials to access the Django admin interface for CRUD operations.
 
-Usage
+## Usage
 Login: Use your credentials to log in to the Django admin interface.
 
 Admin Interface: The Django admin interface provides a powerful tool for CRUD operations on computer inventory.
@@ -37,15 +37,15 @@ Deleting a Computer: Remove a computer from the inventory by utilizing the delet
 
 Viewing Computers: Browse through the list of computers to view their details.
 
-Contributing
+## Contributing
 We welcome contributions from the community. If you find bugs, have feature requests, or would like to contribute code, please follow our Contribution Guidelines.
 
-License
+## License
 This project is licensed under the [License Name] - see the LICENSE.md file for details.
 
-Acknowledgments
+## Acknowledgments
 This project makes use of the Django framework.
 [List any other acknowledgments or credits]
-Contact
+## Contact
 For support, inquiries, or feedback, please contact [Your Email Address].
 
