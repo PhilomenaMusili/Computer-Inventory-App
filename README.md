@@ -1,8 +1,11 @@
 # Computer Inventory Management System (CIMS) using Django
+
 ## Overview
+
 The Computer Inventory Management System is a web-based application built with Django, allowing organizations to manage and keep track of their computer hardware. This system provides a user-friendly interface for performing basic CRUD operations on computer data.
 
 ## Features
+
 Django Admin Interface: Leverage the Django admin interface for efficient CRUD operations on computer data.
 
 Models and Views: Utilize Django models to represent computer data and views to interact with the data.
@@ -10,6 +13,7 @@ Models and Views: Utilize Django models to represent computer data and views to 
 User Authentication: Implement Django's built-in authentication system for secure access to the CRUD functionalities.
 
 ## Installation
+
 1.Prerequisites
 
 2.Python 3.x
