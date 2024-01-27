@@ -14,15 +14,16 @@ User Authentication: Implement Django's built-in authentication system for secur
 
 ## Installation
 
-1.Prerequisites
+Prerequisites
 
-2.Python 3.x
+1.Python 3.x
 
-3.Django 
+2.Django 
 
-4.Bootsrap5
+3.Bootsrap5
 
 ## Installation Steps
+
 1.Clone the repository: git clone [repository_url]
 
 2.Install dependencies: pip install -r requirements.txt
@@ -36,6 +37,7 @@ User Authentication: Implement Django's built-in authentication system for secur
 Visit http://localhost:8000/admin/ and log in with the superuser credentials to access the Django admin interface for CRUD operations.
 
 ## Usage
+
 Login: Use your credentials to log in to the Django admin interface.
 
 Admin Interface: The Django admin interface provides a powerful tool for CRUD operations on computer inventory.
@@ -51,14 +53,18 @@ Deleting a Computer: Remove a computer from the inventory by utilizing the delet
 Viewing Computers: Browse through the list of computers to view their details.
 
 ## Contributing
+
 If you find bugs, have feature requests, or would like to contribute code, you are welcome.
 
 ## License
+
 This project is licensed under the [License Name] - see the LICENSE.md file for details.
 
 ## Acknowledgments
+
 This project makes use of the Django framework.
 
 ## Contact
+
 For support, inquiries, or feedback, please contact [philomenamusili2@gmail.com].
 
