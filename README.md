@@ -34,7 +34,7 @@ Prerequisites
 
 5.Start the development server: python manage.py runserver
 
-To view your management system:
+To view your computer inventory management system:
 Visit http://localhost:8000/admin/ and log in with the superuser credentials to access the Django admin interface for CRUD operations.
 
 ## Usage
