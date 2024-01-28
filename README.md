@@ -54,7 +54,6 @@ Deleting a Computer: Remove a computer from the inventory by utilizing the delet
 Viewing Computers: Browse through the list of computers to view their details.
 
 ## Contributing
-
 If you find bugs, have feature requests, or would like to contribute code, you are welcome.
 
 ## License
