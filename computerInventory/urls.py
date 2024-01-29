@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path
-from inventoryapp.views import home, computer_entry, computer_list, computer_edit
+from inventoryapp.views import home, computer_entry, computer_list, computer_edit, computer_delete
 
 
 urlpatterns = [
