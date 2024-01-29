@@ -47,3 +47,8 @@ def computer_edit(request, id=None):
         "form": form,
     }
     return render(request, "computer_entry.html", context)
+
+def computer_delete(request, id=None):
+   instance = get_object_or_404(Computer, id=id)
+   instance.delete()
+   return redirect("computer_list")
