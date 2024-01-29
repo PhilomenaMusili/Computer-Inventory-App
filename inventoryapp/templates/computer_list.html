@@ -256,10 +256,10 @@
           {% for instance in queryset %}
           <tr>
             <td>{{forloop.counter}}</td>
-            <td>{{instance.Computer_name}}</td>
+            <td>{{instance.computer_name}}</td>
             <td>{{instance.MAC_address}}</td>
             <td>{{instance.IP_address}}</td>
-            <td>{{instance.users_name}}</td>
+            <td><a href="{% url 'computer_edit' id=instance.id %}"> {{instance.users_name}}</td>
             <td>{{instance.location}}</td>
           </tr>
           {% endfor %}

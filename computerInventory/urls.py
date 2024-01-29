@@ -15,11 +15,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from inventoryapp.views import home, computer_entry, computer_list
+from django.urls import path, re_path
+from inventoryapp.views import home, computer_entry, computer_list, computer_edit
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('computer_entry/', computer_entry, name='computer_entry'),
-    path('computer_list/', computer_list, name='computer_list'),]
+    path('computer_list/', computer_list, name='computer_list'),
+    re_path(r'^computer_list/(?P<id>\d+)/$', computer_edit, name='computer_edit'),
+    ]
