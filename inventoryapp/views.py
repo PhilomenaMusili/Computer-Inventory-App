@@ -27,9 +27,18 @@ def computer_entry(request):
 def computer_list(request):
     title = 'List of all computers'
     queryset = Computer.objects.all()
+    form = ComputerSearchForm(request.POST or None)
     context = {
         "title": title,
         "queryset": queryset,
+        "form": form,
+    }
+    if request.method == ‘POST’:
+        queryset = Computer.objects.all().order_by(‘-timestamp’).filter(computer_name__icontains=form[‘computer_name’].value(),users_name__icontains=form[‘users_name’].value())
+        context = {
+        "title": title,
+        "queryset": queryset,
+        "form": form,
     }
     return render(request, "computer_list.html", context)
 
