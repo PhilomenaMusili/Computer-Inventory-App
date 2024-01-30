@@ -33,8 +33,8 @@ def computer_list(request):
         "queryset": queryset,
         "form": form,
     }
-    if request.method == ‘POST’:
-        queryset = Computer.objects.all().order_by(‘-timestamp’).filter(computer_name__icontains=form[‘computer_name’].value(),users_name__icontains=form[‘users_name’].value())
+    if request.method == 'POST':
+        queryset = Computer.objects.all().order_by('-timestamp').filter(computer_name__icontains=form['computer_name'].value(),users_name__icontains=form['users_name'].value())
         context = {
         "title": title,
         "queryset": queryset,
