@@ -4,7 +4,7 @@ from .models import Computer
 class ComputerForm(forms.ModelForm):
     class Meta:
         model = Computer
-        fields = ['computer_name', 'IP_address', 'MAC_address', 'users_name', 'location', 'purchase_date']
+        fields = ['computer_name', 'operating_system','IP_address', 'MAC_address', 'users_name', 'location', 'purchase_date']
 
     def clean_computer_name(self):  # Validates the Computer Name Field
         computer_name = self.cleaned_data.get('computer_name')
