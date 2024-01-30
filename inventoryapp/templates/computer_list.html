@@ -265,6 +265,7 @@
           <tr>
             <td>{{forloop.counter}}</td>
             <td>{{instance.computer_name}}</td>
+            <!-- <td>{{instance.operating_system.all}}</td> -->
             <td>{{instance.MAC_address}}</td>
             <td>{{instance.IP_address}}</td>
             <td><a href="{% url 'computer_edit' id=instance.id %}"> {{instance.users_name}}</td>
