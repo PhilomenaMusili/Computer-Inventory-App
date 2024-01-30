@@ -25,6 +25,6 @@ urlpatterns = [
     path('computer_entry/', computer_entry, name='computer_entry'),
     path('computer_list/', computer_list, name='computer_list'),
     re_path(r'^computer_list/(?P<id>\d+)/$', computer_edit, name='computer_edit'),
-    re_path(r'^computer_list/(?P<id>\d+)/delete$', computer_delete, name='computer_delete'),
+    re_path(r'^computer_list/(?P<id>\d+)/delete/$', computer_delete, name='computer_delete'),
 
     ]
