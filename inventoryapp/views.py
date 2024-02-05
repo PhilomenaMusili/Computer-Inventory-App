@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .forms import ComputerForm, ComputerSearchForm
 from .models import Computer
 from django.shortcuts import get_object_or_404
+export_to_CSV = forms.BooleanField(required=False, label="Export to CSV")
 
 # Create your views here.
 
