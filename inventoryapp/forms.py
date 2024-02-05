@@ -40,4 +40,4 @@ class ComputerForm(forms.ModelForm):
 class ComputerSearchForm(forms.ModelForm):
     class Meta:
         model = Computer
-        fields = ['computer_name', 'users_name']
+        fields = ['computer_name', 'users_name', 'export_to_CSV']
