@@ -244,6 +244,13 @@
 
     <main class="container">
       <div class="bg-body-tertiary p-5 rounded">
+        {% if messages %}
+          <ul class="messages">
+                {% for message in messages %}
+                      <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+         </ul>
+        {% endif %}
         <h1 class="title">{{title}}</h1>
         <form method="post" action="">
           {% csrf_token %}

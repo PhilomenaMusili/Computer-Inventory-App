@@ -3,6 +3,7 @@ from .forms import ComputerForm, ComputerSearchForm
 from .models import Computer
 from django.shortcuts import get_object_or_404
 from django.http import HttpResponse
+from django.contrib import messages
 import csv
 # Create your views here.
 
@@ -19,6 +20,7 @@ def computer_entry(request):
     if form.is_valid():
         form.save()
         form.save_m2m()
+        messages.success(request, 'Successfully Saved')
         return redirect('/computer_list')
     context = {
         "title": title,
@@ -60,6 +62,7 @@ def computer_edit(request, id=None):
         instance = form.save(commit=False)
         instance.save()
         form.save_m2m()
+        messages.success(request, 'Successfully Saved')
         return redirect('/computer_list')
     
     context = {
