@@ -17,6 +17,7 @@ class Computer(models.Model):
     location = models.CharField(max_length=30, blank=True)
     purchase_date = models.DateField("Purchase Date (mm/dd/2023)", auto_now_add=False, auto_now=False, blank=True, null=True)
     timestamp = models.DateField(auto_now_add=True, auto_now=False, blank=True)
+    export_to_CSV = models.BooleanField(default=False)
 
     def __str__(self):
         return f"{self.computer_name} ({', '.join(os.name for os in self.operating_system.all())})"
