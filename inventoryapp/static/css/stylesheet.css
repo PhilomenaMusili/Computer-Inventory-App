@@ -19,3 +19,11 @@ table tr:nth-child(odd) {
 table tr:nth-child(even) {
   background: #dae5f4;
 }
+
+.success {
+  list-style: none;
+  background-color: #2e6da4;
+  color: white;
+  box-shadow: 12px 12px 12px #e61c66;
+  text-align: center;
+}
