@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+from src.local_settings import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -69,6 +70,7 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'computerInventory.wsgi.application'
 
 
@@ -81,19 +83,6 @@ WSGI_APPLICATION = 'computerInventory.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'computerinventory',
-        'USER': 'root',
-        'PASSWORD': 'Password@12',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'OPTIONS':{
-            'init_command' : "SET sql_mode='STRICT_TRANS_TABLES'"
-        }
-    }
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
