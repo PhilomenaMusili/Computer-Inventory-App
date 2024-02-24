@@ -265,6 +265,15 @@
               <a class="nav-link" href="/computer_entry">Computer Entry</a>
             </li>
           </ul>
+          <!-- This block checks if the user is authenticated before displaying sensitive information -->
+
+          {% if request.user.is.authenticated %}
+          <li><a  href="/accounts/login">login</a></li>
+          {% else %}
+          <li><a  href="/accounts/logout">Logout</a></li>
+          {% endif %}
+        </div>
+      </nav>
           <form class="d-flex" role="search">
             <input
               class="form-control me-2"
@@ -276,9 +285,9 @@
               Search
             </button>
           </form>
-        </div>
+        
       </div>
-    </nav>
+    
     {% block content %} {% endblock %}
   </body>
 </html>

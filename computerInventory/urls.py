@@ -15,7 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, re_path
+from django.urls import path, re_path, include
 from inventoryapp.views import home, computer_entry, computer_list, computer_edit, computer_delete
 
 
@@ -26,5 +26,5 @@ urlpatterns = [
     path('computer_list/', computer_list, name='computer_list'),
     re_path(r'^computer_list/(?P<id>\d+)/$', computer_edit, name='computer_edit'),
     re_path(r'^computer_list/(?P<id>\d+)/delete/$', computer_delete, name='computer_delete'),
-
-    ]
+    path('accounts/', include('registration.backends.default.urls')),
+]
