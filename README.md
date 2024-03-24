@@ -10,7 +10,7 @@ Django Admin Interface: Leverage the Django admin interface for efficient CRUD o
 
 Models and Views: Utilize Django models to represent computer data and views to interact with the data.
 
-User Authentication: Implement Django's built-in authentication system for secure access to the CRUD functionalities.
+User Authentication: Implement Django's built-in authentication system for secure access to the CRUD (Create)functionalities.
 
 ## Installation
 
