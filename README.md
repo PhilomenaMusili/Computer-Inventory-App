@@ -1,4 +1,4 @@
-# Computer Inventory Management System (CIMS) using Django
+# Computer Inventory Management System  using Django
 
 ## Overview
 
