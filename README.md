@@ -57,9 +57,6 @@ Viewing Computers: Browse through the list of computers to view their details.
 
 If you find bugs, have feature requests, or would like to contribute to this repository are welcome! If you have a new algorithmic problem or an improved solution to an existing problem, feel free to open a pull request. 
 
-## License
-
-This project is licensed under the [License Name] - see the LICENSE.md file for details.
 
 ## Acknowledgments
 
